@@ -58,6 +58,7 @@ namespace Katmanli.DataAccess.Repository
         public void Update(TEntity entity)
         {
             _dbSet.Update(entity);
+
         }
 
         public IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> expression)

@@ -14,6 +14,7 @@ namespace Katmanli.Service.Mapping
         public MapProfile()
         {
             CreateMap<User, UserQuery>().ReverseMap();
+            CreateMap<AboutMe, AboutMeQuery>().ReverseMap();
 
         }
     }

@@ -24,6 +24,16 @@ namespace Katmanli.DataAccess
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
 
+        public DbSet<Education> Educations { get; set; }
+        public DbSet<AboutMe> AboutMes { get; set; }
+        public DbSet<Experience> Experiences { get; set; }
+
+        public DbSet<Project> Projects { get; set; }
+
+        public DbSet<Project> Contacts { get; set; }
+
+        public DbSet<Project> Articles { get; set; }
+
         // Default olarak Admin ve Kullanıcı rollerini Seed data olarak ata.
 
         private void SeedData(ModelBuilder modelBuilder)

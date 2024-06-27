@@ -1,9 +1,12 @@
 using Katmanli.Core.Interfaces.DataAccessInterfaces;
+using Katmanli.Core.Interfaces.IUnitOfWork;
 using Katmanli.Core.Interfaces.ServiceInterfaces;
 using Katmanli.Core.SharedLibrary;
 using Katmanli.DataAccess;
 using Katmanli.DataAccess.Entities;
 using Katmanli.DataAccess.Repository;
+using Katmanli.DataAccess.UnitOfWork;
+using Katmanli.Service.Interfaces;
 using Katmanli.Service.Mapping;
 using Katmanli.Service.Services;
 using Microsoft.EntityFrameworkCore;
@@ -25,6 +28,8 @@ builder.Services.AddAutoMapper(typeof(MapProfile));
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ITokenCreator, TokenCreator>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IAboutMeService, AboutMeService>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 //DbContext Ekleme
 var connectionString = builder.Configuration.GetConnectionString("DatabaseConnection");
