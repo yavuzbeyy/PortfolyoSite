@@ -30,9 +30,9 @@ namespace Katmanli.DataAccess
 
         public DbSet<Project> Projects { get; set; }
 
-        public DbSet<Project> Contacts { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
 
-        public DbSet<Project> Articles { get; set; }
+        public DbSet<Article> Articles { get; set; }
 
         // Default olarak Admin ve Kullanıcı rollerini Seed data olarak ata.
 
