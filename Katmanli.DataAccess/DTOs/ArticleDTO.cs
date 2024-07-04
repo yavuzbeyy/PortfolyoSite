@@ -32,5 +32,6 @@ namespace Katmanli.DataAccess.DTOs
         public string? Title { get; set; }
         public string? Content { get; set; }
         public string? FileKey { get; set; }
+        public DateTime? CreatedDate { get; set; }
     }
 }

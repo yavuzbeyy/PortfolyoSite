@@ -21,6 +21,7 @@ namespace Katmanli.DataAccess.Entities
             article.Title = model?.Title;
             article.Content = model?.Content;
             article.FileKey = model?.FileKey;
+            article.CreatedDate = DateTime.Now;
 
             return article;
         }

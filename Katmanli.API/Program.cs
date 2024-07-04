@@ -22,6 +22,12 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod()
             .AllowAnyHeader());
 });
+/*
+ * HTTP/1.1 200 OK
+Access-Control-Allow-Origin: https://example.com
+Access-Control-Allow-Methods: GET, POST
+Access-Control-Allow-Headers: Content-Type
+*/
 
 // Add services to the container.
 
