@@ -50,6 +50,7 @@ builder.Services.AddScoped<IAboutMeService, AboutMeService>();
 builder.Services.AddScoped<IArticleService, ArticleService>();
 builder.Services.AddScoped<IProjectService, ProjectService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IUploadService, UploadService>();
 
 //DbContext Ekleme
 var connectionString = builder.Configuration.GetConnectionString("DatabaseConnection");
